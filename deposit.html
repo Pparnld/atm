@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="js/bootstrap.min.css" rel="stylesheet">
+	<title>ATM Machine</title>
+	<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="angular">
+        <div class="container">
+            <div class="row">  
+            	 <div class="wrapper">
+        	<div class="sidebar" style="margin-left: -130px;">
+        		<h2>Options</h2>
+        	<ul type="none">
+        	<li><a href="balance.html"> Check Balance</a></li>
+            <li><a href="deposit.html">Deposit</a></li>
+            <li><a href="withdraw.html">Withdraw</a></li>
+            <li><a href="index.html">Exit</a></li>
+        	</ul>
+        		
+        	</div>
+        </div>
+                <div class="col-lg-6">
+                    <div class="submit-area">
+                        <h4>Deposit Amount</h4>
+                        <div ng-controller="atm">
+                        <input type="text" placeholder="Enter deposit amount" ng-model="num2">
+                        <br>
+                        <input type="button"  class = "but" ng-model="dep" ng-click="dep(num2)" value="Deposit">
+                        <br>
+                        {{noe1}}
+                        <br>
+                        <h2>{{noe2}} {{ttld | currency}}</h2>
+                    </div>
+                        
+                    </div>
+                </div>
+             </div> 
+            </div>
+        </div>
+
+
+	<script src ="app.js"></script>
+	<script src = "maincontroller.js"></script>
+</body>
+</html>

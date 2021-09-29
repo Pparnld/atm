@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="js/bootstrap.min.css" rel="stylesheet">
+	<title>ATM Machine</title>
+	<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="angular">
+        <div class="wrapper">
+        	<div class="sidebar">
+        		<h2>Options</h2>
+        	<ul type="none">
+        	<li><a href="balance.html"> Check Balance</a></li>
+            <li><a href="deposit.html">Deposit</a></li>
+            <li><a href="withdraw.html">Withdraw</a></li>
+            <li><a href="index.html">Exit</a></li>
+        	</ul>
+        		
+        	</div>
+
+        	 <div class="main_content">
+        	 		<div class="info">
+        	 			<div>
+        	 			<h2 style="align-content: center; font-weight: bold;">WELCOME TO PAP BANK</h2>
+        	 		</div>
+        	 			
+        	 		</div>
+        	 	
+        	 </div>
+ 
+   <!--
+		<div class="container">
+			<div ng-controller= "atm">
+			<br>
+
+			<h1>WITHDRAW</h1>
+				<input type="text" placeholder="Enter amount" ng-model="num1">
+			<br>
+			<input type="button" class="but" ng-model="wid" ng-click="wid(num1)" value="Withdraw">
+			<br>
+			{{not1}}
+			<br>
+			{{not2}} {{ total | currency }}
+				
+
+	<div class="container">
+			<h1>DEPOSIT</h1>
+			<input type="text" placeholder="Enter Amount" ng-model="num2">
+			<br>
+			<input type="button" ng-model="dep" ng-click="dep(num2)" value="Deposit">
+			<br>
+			{{noe1}}
+			<br>
+			<h2>{{noe2}} {{ttld | currency}}</h2>
+		</div>
+			
+		
+		</div>
+		</div>
+		
+
+				
+		
+		</div>-->
+
+	<script src ="app.js"></script>
+	<script src = "maincontroller.js"></script>
+</body>
+</html>
